@@ -21,7 +21,7 @@ public class HelloWorldServlet extends HttpServlet {
 
 //        response.getWriter().println("Hello World!");
 //
-//        PrintWriter pw =response.getWriter();
+//        PrintWriter pw = response.getWriter();
 //
 //        String name = request.getParameter("Mike");
 //
