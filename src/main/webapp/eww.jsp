@@ -2,25 +2,17 @@
   Created by IntelliJ IDEA.
   User: michael-angelcevallos
   Date: 3/9/23
-  Time: 1:41 PM
+  Time: 2:55 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Title</title>
-    <style>
-        body {
-            background: blue;
-        }
-    </style>
 </head>
 <body>
-<h1>Hello World!</h1>
 
-<script>
-    "use strict";
-    alert('Hello, Zenith!');
-</script>
+<h1>Eww!</h1>
+
 </body>
 </html>

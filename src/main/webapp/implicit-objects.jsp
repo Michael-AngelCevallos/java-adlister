@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: michael-angelcevallos
@@ -8,16 +9,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%-- THIS CODE NORMALLY GOES IN A SERVLET (begin)--%>
-<%=
-       String myName = ("Mike");
-       request.setAttribute("myName", myName);
-       String method = request.getMethod();
-       if(method.equals("GET")){
-            request.setAttribute("message", "The method is GET");
-       }else if (method.equals("POST")){
-            request.setAttribute("message", "The method is POST");
+<%--<%--%>
+<%--       String myName = ("Mike");--%>
+<%--       request.setAttribute("myName", myName);--%>
+<%--       String method = request.getMethod();--%>
+<%--       if(method.equals("GET")){--%>
+<%--            request.setAttribute("message", "The method is GET");--%>
+<%--       }else if (method.equals("POST")){--%>
+<%--            request.setAttribute("message", "The method is POST");--%>
 
- %>
+<%-- %>--%>
 
 
 <html>
@@ -43,6 +44,9 @@
     <button>Submit</button>
 </form>
 
+
+<h1>Some Input: <%=request.getAttribute("someInput1")%></h1>
+<h1>Some Input: ${someInput2}</h1>
 
 </body>
 </html>
