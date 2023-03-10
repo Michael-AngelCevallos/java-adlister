@@ -11,6 +11,7 @@
     if (foodType.equals("rhubarb")) {
         response.sendRedirect("/eww.jsp");
     }
+
     request.setAttribute("foodType", foodType);
     Map<String, List<String>> foods = new HashMap<>();
     List<String> meats = new ArrayList<>(Arrays.asList(
@@ -26,6 +27,8 @@
     foods.put("dairy", dairy);
     request.setAttribute("foods", foods.get(foodType));
 %>
+
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -36,6 +39,23 @@
 <h1>Food type: ${foodType}</h1>
 
 <h3>${foods}</h3>
+
+<c:forEach items ="${foods}">
+    <h3> ${foods}</h3>
+
+</c:forEach>
+<%--Displays list of foods using JSTL--%>
+<%--ADD ("oh, yeah, steak") if food is steak--%>
+
+<script>
+
+    [1,2,3].forEach(function(element, index, array){
+
+
+    });
+
+</script>
+
 
 </body>
 </html>
