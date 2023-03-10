@@ -8,7 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-    if (request.getMethod().equalsIgnoreCase("post")) {
+    if (request.getMethod().equals("post")) {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
         if (username.equals("admin") && password.equals("password")) {
@@ -26,6 +26,8 @@
 
 <%@ include file="partials/navbar.jsp"%>
 
+
+
 <div class="container">
     <h1>Log In</h1>
     <form action="/login.jsp" method="POST">
@@ -39,6 +41,8 @@
         </div>
         <input type="submit" class="btn btn-primary btn-block" value="Log In">
     </form>
+
+    <%@ include file="partials/footer.jsp"%>
 </div>
 </body>
 </html>

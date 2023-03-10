@@ -1,13 +1,13 @@
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %>
-<%@ page import="java.util.Arrays" %>
-<%@ page import="model.Product" %><%--
-  Created by IntelliJ IDEA.
-  User: michael-angelcevallos
-  Date: 3/10/23
-  Time: 10:47 AM
-  To change this template use File | Settings | File Templates.
---%>
+<%--<%@ page import="java.util.List" %>--%>
+<%--<%@ page import="java.util.ArrayList" %>--%>
+<%--<%@ page import="java.util.Arrays" %>--%>
+<%--<%@ page import="model.Product" %>&lt;%&ndash;--%>
+<%--  Created by IntelliJ IDEA.--%>
+<%--  User: michael-angelcevallos--%>
+<%--  Date: 3/10/23--%>
+<%--  Time: 10:47 AM--%>
+<%--  To change this template use File | Settings | File Templates.--%>
+<%--&ndash;%&gt;--%>
 
 <%--<%@ page contentType="text/html;charset=UTF-8" language="java" %>--%>
 <%--<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>--%>
