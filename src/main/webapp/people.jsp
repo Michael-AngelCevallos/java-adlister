@@ -11,20 +11,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%
-Person p1 = new Person("Fred Smith", 24);
-Person p2 = new Person("Sally Smith", 34);
-Person p3 = new Person("Andy Smith", 14);
 
-  List<Person> people = new ArrayList<>(Arrays.asList(
-          p1,
-          p2,
-          p3
-
-  ));
-request.setAttribute("people", people);
-
-%>
 
 
 <html>
@@ -45,20 +32,14 @@ request.setAttribute("people", people);
         <c:forEach var="person" items="${people}">
             <h3>
                     ${people.name}
-                <c:if test = "${person.age < 21}">
-                (minor)
+                <c:if test="${person.age < 21}">
+                    (minor)
                 </c:if>
             </h3>
         </c:forEach>
     </c:otherwise>
 
 </c:choose>
-
-
-
-
-
-
 
 
 </body>

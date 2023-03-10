@@ -38,10 +38,12 @@
 </head>
 <body>
 
-
+<%-- Returns Names in Brackets--%>
 <h3>${names}</h3>
 
 
+
+<%-- Returns Names in Bullet Point form--%>
 <h3>${names}</h3>
 <c:forEach var="name" items="${names}">
     <li>${name}</li>

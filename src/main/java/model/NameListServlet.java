@@ -21,7 +21,9 @@ public class NameListServlet extends HttpServlet {
                 "Mike",
                 "John",
                 "Alex",
-                "Roman"
+                "Roman",
+                "Jovan",
+                "Brittany"
         ));
         request.setAttribute("names", names);
 //send a response based on the names.jsp
