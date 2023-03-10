@@ -12,21 +12,29 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
 
-<%
-  List<String> names = new ArrayList<>(Arrays.asList(
-          "Mike",
-          "Justin",
-          "Alex",
-          "Roman"
-  ));
-request.setAttribute("names", names);
 
-%>
 
 
 <html>
 <head>
     <title>Title</title>
+
+
+    <style>
+
+        h3{
+            color: blue;
+            text-align: center;
+        }
+
+        body{
+            background: black;
+        }
+        li{
+            color: green;
+        }
+
+    </style>
 </head>
 <body>
 
