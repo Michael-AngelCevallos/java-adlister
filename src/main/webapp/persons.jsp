@@ -1,6 +1,7 @@
 <%@ page import="model.Person" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.Arrays" %><%--
   Created by IntelliJ IDEA.
   User: michael-angelcevallos
   Date: 3/10/23
@@ -15,8 +16,13 @@ Person p1 = new Person("Fred Smith", 24);
 Person p2 = new Person("Sally Smith", 34);
 Person p3 = new Person("Andy Smith", 14);
 
-  List<Person> people = new ArrayList<>()
+  List<Person> people = new ArrayList<>(Arrays.asList(
+          p1,
+          p2,
+          p3
 
+  ));
+request.setAttribute("people", people);
 
 %>
 
@@ -29,14 +35,30 @@ Person p3 = new Person("Andy Smith", 14);
 
 <h1>People</h1>
 
-<c:forEach var="person" items="${people}">
-  <h3>
-          ${people.name}
-          <c:if test = "${person.age < 21}">
-            (minor)
-          <c:if>
-    </h3>
-</c:forEach>
+<c:choose>
+
+    <c:when test="${people.isEmpty()}">
+        <h3>No People</h3>
+    </c:when>
+
+    <c:otherwise>
+        <c:forEach var="person" items="${people}">
+            <h3>
+                    ${people.name}
+                <c:if test = "${person.age < 21}">
+                (minor)
+                </c:if>
+            </h3>
+        </c:forEach>
+    </c:otherwise>
+
+</c:choose>
+
+
+
+
+
+
 
 
 </body>
