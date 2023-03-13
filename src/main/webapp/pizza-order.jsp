@@ -45,36 +45,31 @@ todo 3- don't worry about styling--%>
 
 <%--Sauce--%>
 <h3>Select Sauce: </h3>
-    <label>
-        <input type="checkbox" value="tomato">
-    </label>Tomato</input>
-    <label>
-        <input type="checkbox" value=Alfredo">
-    </label>Alfredo</input>
-    <label>
-        <input type="checkbox" value="special">
-    </label>Special Blend</input>
-    <label>
-        <input type="checkbox" value="no-sauce">
-    </label>None</input>
+
+
+    <label><input type="checkbox" value="tomato"></label>Tomato</input>
+
+    <label><input type="checkbox" value=Alfredo"></label>Alfredo</input>
+
+    <label><input type="checkbox" value="special"></label>Special Blend</input>
+
+    <label><input type="checkbox" value="no-sauce"></label>None</input>
 
     <%--Size--%>
 
 <h3>Select Size: </h3>
 
     <ol>
-        <li>Small - "10"</li>
+        <li>Small -  "10"</li>
         <li>Medium - "12"</li>
-        <li>Large - "14"</li>
+        <li>Large -  "14"</li>
         <li>X-Large - "18"</li>
     </ol>
+
+
 <h4>Enter Your Size: </h4>
-
-    <input type="text" value="">
-
-</input>
-
-<input type="submit" class="btn btn-primary btn-block" value="Submit">
+    <label><input type="text" value=""></label>
+    <input type="submit" class="btn btn-primary btn-block" value="Submit">
 
 </form>
 

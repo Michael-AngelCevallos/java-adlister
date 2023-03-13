@@ -6,15 +6,15 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<<HTML>
-<HEAD>
-    <TITLE>
+<<html>
+<head>
+    <title>
         Color Change
-    </TITLE>
-</HEAD>
-<BODY>
+    </title>
+</head>
+<body>
 
-<FORM method=get action="/viewcolor">
+<form method=get action="/viewcolor">
 
         Select Color :
         <select name="color" id="color">
@@ -25,8 +25,8 @@
             <option value="black">Black</option>
         </Select>
         <input type="submit" value="Submit">
-</FORM>
+</form>
 
-</BODY>
+</body>
 
-</HTML>
+</html>

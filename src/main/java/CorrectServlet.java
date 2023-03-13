@@ -3,13 +3,12 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
 
-@WebServlet(name = "pickcolorServlet", value = "/pickcolor")
-public class pickcolorServlet extends HttpServlet {
+@WebServlet(name = "CorrectServlet", value = "/correct")
+public class CorrectServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/pickcolor.jsp").forward(request, response);
-
-
-
+        request.setAttribute("result", "CORRECT");
+        request.setAttribute("result", 2);
+        request.getAttribute("/result.jsp");
     }
 }
