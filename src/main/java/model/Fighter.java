@@ -2,12 +2,16 @@ package model;
 
 //DON'T NEED TO ADD/IMPLEMENT SERIALIZABLE BUT IS GOOD PRACTICE TOO  <----------
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class Fighter implements Serializable {
     private int id;
     private String name;
     private int maxDamage;
     private int hitPoints;
+
+    private ArrayList<Weapon> weapons;
+
 
 
     public int getId() {
@@ -42,8 +46,13 @@ public class Fighter implements Serializable {
         this.hitPoints = hitPoints;
     }
 
-    public Fighter(){
 
+    public ArrayList<Weapon> getWeapons() {
+        return weapons;
+    }
+
+    public void setWeapons(ArrayList<Weapon> weapons) {
+        this.weapons = weapons;
     }
 
     public Fighter(String name, int maxDamage, int hitPoints) {
@@ -53,5 +62,15 @@ public class Fighter implements Serializable {
 
     }
 
+    public Fighter(){
+
+    }
+
+    public Fighter(String name, int maxDamage, int hitPoints, ArrayList<Weapon> weapons) {
+        this.name = name;
+        this.maxDamage = maxDamage;
+        this.hitPoints = hitPoints;
+        this.weapons = weapons;
+    }
 }
 

@@ -23,8 +23,14 @@ public class FighterTest {
 
         ArrayList<Fighter> fighters = new ArrayList<>(List.of(fighter1, fighter2, fighter3));
 
-        for ( Fighter fighter: fighters){
+        for ( Fighter fighter: fighters) {
             System.out.println(fighter.getName() + " has " + fighter.getHitPoints() + " hit points and can do " + fighter.getMaxDamage() + " points of damage.");
+            if (fighter.getWeapons() != null) {
+                System.out.println("This fighter uses a " + fighter.getWeapons().get(0).getName());
+                 for(Weapon weapon: fighter.getWeapons()){
+                    System.out.println(weapon.getName());
+        }
+            }
         }
 
     }
