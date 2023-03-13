@@ -13,21 +13,12 @@ import java.io.IOException;
 //
 //#4 todo Allow the user to pass a parameter in the query string to reset the counter.
 
-@WebServlet("/count")
+@WebServlet(name = "CounterServlet", urlPatterns = "/count")
 public class CounterServlet extends HttpServlet {
+    private int counter = 0;
 
-    public static int count = 0;
-
-
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String reset = request.getParameter("reset");
-        if(reset != null){
-            count = 0;
-        }
-        response.getWriter().println(count);
-        count++;
-
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        counter ++ ;
+        response.getWriter().println("<h1>The count is " + counter + ".</h1>");
     }
-
 }
